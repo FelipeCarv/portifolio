@@ -1,0 +1,17 @@
+@import "../sass/cores";
+@import "../sass/fontes";
+
+
+//UTILIDADES
+@import "../sass/utilities/reset";
+@import "../sass/utilities/responsivo";
+@import "../sass/utilities/global"; 
+@import "../sass/components/modal";
+
+
+
+
+
+.body__index {
+    @import "./pages/page_index"; 
+}
