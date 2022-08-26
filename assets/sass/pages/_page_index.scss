@@ -60,3 +60,53 @@
     background-position: center;
 }
 
+.quem-sou-bg{
+    background: #24252D;
+}
+
+#quem-sou{
+    .quem-sou{
+        .conteudo-quem-sou{
+            display: flex;
+            justify-content: center;
+            gap: 168px;
+            padding-top: 74px;
+
+            .info-chamada{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 735px;
+
+                h3{
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: #FFFFFF;
+                }
+
+                p{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+
+                .btn-curriculo{
+                    
+                    margin-top: 67px;
+                    align-self: baseline;
+
+                    a{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                        border: 5px solid #CCCCCC;
+                        padding: 21px 41px;
+                    }
+                }
+            }
+        }
+    }
+}
