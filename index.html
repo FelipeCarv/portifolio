@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.compilado.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Felipe Carvalho - Portifólio</title>
 </head>
@@ -19,7 +21,7 @@
            <div class="container">
             <div class="introducao">
                 <div class="header">
-                    <div class="header-links-site">
+                    <div class="header-links-site"  data-aos="fade-down" data-aos-delay="200">
                         <ul>
                             <li>
                                 <a href="#introducao">Inicio</a>
@@ -33,7 +35,7 @@
                         </ul>
                     </div>
 
-                    <div class="header-links-redes">
+                    <div class="header-links-redes"  data-aos="fade-down" data-aos-delay="200">
                         <ul>
                             <li><a href="https://www.instagram.com/lipeh_c/" target="_blank"><img src="/assets/img/img-principal/instagram.svg" alt=""></a></li>
                             <li><a href="https://www.linkedin.com/in/felipe-carvalho-072895197/" target="_blank"><img src="/assets/img/img-principal/linkedin.svg" alt=""></a></li>
@@ -55,16 +57,16 @@
             <div class="container">
                 <div class="quem-sou">
                     <div class="conteudo-quem-sou">
-                        <div class="img-quem-sou">
+                        <div class="img-quem-sou" data-aos="fade-up" data-aos-delay="200">
                             <img src="/assets/img/img-principal/QUEM SOU.png" alt="">
                         </div>
 
-                        <div class="info-chamada">
-                            <div class="titulo">
+                        <div class="info-chamada" >
+                            <div class="titulo" data-aos="fade-left">
                                 <h3>Olá, eu sou o Felipe!</h3>
                             </div>
 
-                            <p>
+                            <p data-aos="fade-left">
                                 Aluno da Graduação em Tecnologia da Informação (Bacharelado) 
                                 pela Universidade Federal Rural do Semiárido (UFERSA) e Técnico 
                                 em Informática para Internet pelo Instituto Metrópole Digital (IMD) 
@@ -72,13 +74,13 @@
                                 além de ser grande entusiasta de User Experience (UX) e User Interface (UI). 
                             </p>
 
-                            <div class="btn-curriculo">
+                            <div class="btn-curriculo" data-aos="fade-left">
                                 <a href="/assets/doc/Felipe Pessoa de Carvalho.pdf" download="Felipe Pessoa de Carvalho.pdf">BAIXE AQUI MEU CURRÍCULO</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-skills">
+                    <div class="card-skills" data-aos="fade-down">
                         <div class="chamada-cards">
                             <p>Minhas Habilidades:</p>
                         </div>
@@ -117,7 +119,7 @@
         <section id="projetos" class="projetos-bg">
             <div class="container">
                 <div class="projetos">
-                    <div class="projetos-chamada">
+                    <div class="projetos-chamada" data-aos="fade-left">
                         <h2>Projetos & Casos de estudo</h2>
                     </div>
 
@@ -170,5 +172,8 @@
 
     <script type="module" src="./assets/js/main.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
