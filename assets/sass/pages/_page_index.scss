@@ -15,10 +15,29 @@
                     li{
                         
                         a{
+                            position: relative;
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 24px;
                             color: #FFFCFC;
+                            max-width: max-content;
+
+                            &::after{
+                                content: " ";
+                                display: block;
+                                height: 1px;
+                                width: 0%;
+                                background-color: #FFFCFC ;
+                                margin-top: 4px;
+                                position: absolute;
+                               
+                            }
+
+                            &:hover::after{
+                                width: 100%;
+                                transition: 0.3s;
+                            }
+                           
                         }
                     }
                 }  
@@ -71,6 +90,7 @@
             justify-content: center;
             gap: 168px;
             padding-top: 74px;
+            position: relative;
 
             .info-chamada{
                 display: flex;
@@ -104,6 +124,78 @@
                         color: #FFFFFF;
                         border: 5px solid #CCCCCC;
                         padding: 21px 41px;
+
+                        &:hover{
+                            border-color: #FFFFFF;
+                            transition: .3s;
+                            filter: drop-shadow(0px 0px 1.5px rgba(255, 255, 255, 0.87));
+                        }
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    background: url(/assets/img/img-principal/bubbles1.png) no-repeat left;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 55%;
+                    right: 7%;
+                }
+
+                &::before{
+                    content: "";
+                    background: url(/assets/img/img-principal/bubbles2.png) no-repeat left;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 52%;
+                    left: 92%;
+                }
+            }
+        }
+
+        .card-skills{
+            margin-top: 98px;
+
+            .chamada-cards{
+                p{
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 39px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .card-swipper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 32px;
+
+                .card{
+                    background: #1E1F24;
+                    padding: 17px 90px;
+                    box-shadow: (4px 4px 4px rgba(0, 0, 0, 0.25));
+                    
+                    .card-info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+
+                        p{
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #FFFFFF;
+                            margin-top: 10px;
+                            text-transform: uppercase;
+                        }
+
+                        
                     }
                 }
             }
