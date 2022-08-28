@@ -13,5 +13,16 @@ export default function scriptsIndex(){
     }
     const titulo = document.querySelector('.titulo-principal');
     typeWrite(titulo);
+
+
+
+    const btnMobile = document.getElementById('btn-mobile');
+
+    function toggleMenu(){
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
+
+    btnMobile.addEventListener('click' , toggleMenu);
     
 }

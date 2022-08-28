@@ -5,7 +5,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+            @include d(s){
+                display: none;
+            }
 
             .header-links-site{
                 ul{
@@ -41,9 +43,12 @@
                         }
                     }
                 }  
+
+               
             }
 
             .header-links-redes{
+               
                 ul{
                     display: flex;
                     gap: 2.125rem;
@@ -55,6 +60,23 @@
                         }
                     }
                 }
+
+              
+            }
+           
+        }
+
+        .header.active{
+            display: flex;
+        }
+
+        #btn-mobile{
+            display: none;
+           
+            @include d(s){
+                display: flex;
+                justify-content: end;
+                padding-top: 2.5rem;
             }
         }
 
