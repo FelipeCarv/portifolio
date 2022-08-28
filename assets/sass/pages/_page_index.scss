@@ -5,6 +5,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
             @include d(s){
                 display: none;
                 flex-direction: column;
@@ -371,7 +372,7 @@
                 height: 100%;
                 max-width: 36.875rem;
                 max-height: 23.125rem;
-                background: url(/assets/img/img-principal/projeto1.png) no-repeat;
+                background: url(/assets/img/img-principal/bikcraft-case-study.png) no-repeat;
                 background-size: cover;
                 background-position: center;
 
@@ -384,6 +385,11 @@
                     @include d(t){
                         padding: 7px 0px;
                     }
+
+                    h2.branco{
+                        color:#FFFFFF;
+                    }
+
                     h2{
                         font-weight: 700;
                         font-size: 1.5rem;
@@ -407,10 +413,18 @@
                             border: 3px solid#24252D;
                             border-radius: 100%;
                         }
+
+                        .detail.branco{
+                            border: 3px solid #ffffff;
+                        }
+                    }
+                    .info.branco{
+                        color:#FFFFFF;
                     }
 
                     .button-projeto{
                         margin-bottom: 2.3125rem;
+
                         a{
                             font-weight: 700;
                             font-size: .875rem;
@@ -418,6 +432,17 @@
                             color: #24252D;
                             border: 5px solid #24252D;
                             padding: 12px 20px;
+
+                            &:hover{
+                                color: #6e6b6b;
+                                border: 5px solid #6e6b6b;
+                                transition: .3s;
+                            }
+                        }
+
+                        a.branco{
+                            color:#FFFFFF;
+                            border: 5px solid #FFFFFF;
 
                             &:hover{
                                 color: #6e6b6b;
