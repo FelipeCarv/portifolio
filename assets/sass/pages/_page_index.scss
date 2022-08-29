@@ -527,13 +527,25 @@
         text-align: center;
         align-items: center;
         justify-content: space-between;
-
+        @include d(s){
+            display: block;
+        }
         a{
             color: #dbdada;
-
+            
             &:hover{
                 color: #FFFFFF;
                 transition: .3s;
+            }
+
+            @include d(s){
+                font-size: .7rem;
+            }
+        }
+
+        p{
+            @include d(s){
+                font-size: .7rem;
             }
         }
     }
